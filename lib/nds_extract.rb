@@ -35,7 +35,7 @@ def directors_totals(nds)
     end
     row_index += 1
   end
-  puts hash[:director] = total
+  puts hash[director] = total
 end
 
 directors_totals(directors_database)
