@@ -37,6 +37,7 @@ def directors_totals(nds)
     result[director] = total
   end
   puts result
+  return result
 end
 
 directors_totals(directors_database)
