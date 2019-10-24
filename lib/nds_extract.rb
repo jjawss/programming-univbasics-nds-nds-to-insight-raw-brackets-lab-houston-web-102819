@@ -34,9 +34,9 @@ def directors_totals(nds)
       column_index += 1
     end
     row_index += 1
-    hash[director] = total
+    result[director] = total
   end
-  puts hash
+  puts result
 end
 
 directors_totals(directors_database)
