@@ -24,11 +24,11 @@ def directors_totals(nds)
   #directors_database[0][:name] => directors[database][0 #static][:movies][0 #loop][+=:worldwide_gross] 
   
   row_index = 0
-  total = 0
   result = {}
   while row_index < nds.length
     director = nds[row_index][:name]
     column_index = 0
+    total = 0
     while column_index < nds[row_index][:movies].length
       total += nds[row_index][:movies][column_index][:worldwide_gross]
       column_index += 1
