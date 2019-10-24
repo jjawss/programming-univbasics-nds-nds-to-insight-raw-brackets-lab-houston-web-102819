@@ -26,16 +26,19 @@ def directors_totals(nds)
   row_index = 0
   total = 0
   hash = {}
-  while row_index < nds[:name].length
-    director = nds[:name][row_index]
+  while row_index < nds.length
+    director = nds[row_index][:name]
     column_index = 0
-    while column_index < nds[row_index][:movies][column_index].length
-      puts total += nds[row_index][:movies][column_index][:worldwide_gross]
+    while column_index < nds[row_index][:movies].length
+      total += nds[row_index][:movies][column_index][:worldwide_gross]
+      column_index += 1
     end
-    column_index += 1
+    row_index += 1
   end
-  row_index += 1
+  puts hash[:director] = total
 end
+
+directors_totals(directors_database)
 
 
 #[{:name=>"Stephen Spielberg",
